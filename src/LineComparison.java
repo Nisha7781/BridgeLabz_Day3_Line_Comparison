@@ -15,8 +15,30 @@ public class LineComparison
         System.out.print("Enter y2 co-ordinator: ");
         float y2 = sc.nextFloat();
 
-        float length = (float) Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2));
+        float line1 = (float) Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2));
+        System.out.println("Length of the line1 is: " + line1);
 
-        System.out.println("Length of the line is: " + length);
+        System.out.print("Enter x3 co-ordinator: ");
+        float x3 = sc.nextFloat();
+        System.out.print("Enter y3 co-ordinator: ");
+        float y3 = sc.nextFloat();
+        System.out.print("Enter x4 co-ordinator: ");
+        float x4 = sc.nextFloat();
+        System.out.print("Enter y4 co-ordinator: ");
+        float y4 = sc.nextFloat();
+
+        float line2 = (float) Math.sqrt(Math.pow(x4-x3, 2) + Math.pow(y4-y3, 2));
+        System.out.println("Length of the line2 is: " + line2);
+
+        String L1 = String.valueOf(line1);
+        String L2 = String.valueOf(line2);
+
+        if(L1.equals(L2)){
+            System.out.println("Both lines are equal in length");
+        }
+        else{
+            System.out.println("Lines are not equal");
+        }
+
     }
 }
